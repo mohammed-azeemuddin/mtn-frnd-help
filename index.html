@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <style>
+        button{
+            font-family: Helvetica;
+        }
+    </style>
+<body>
+    <script src="myscript.js" ></script>
+
+    <h1>Caclulate Mutton Rate</h1>
+
+    <h2 for="tot_mtn_rate">Enter Mutton Rate (for kg):</h2> 
+    <center><input type="text" name="tot_mtn_rate" id="tot_mtn_rate" value ="920"/></center> 
+    <br><br>
+
+    <div class="flex-container">
+        <div id="tot-mtn-rate">
+            <h4>Calculate in Gms</h4>
+            <button class="button-3" role="button" value="calculate" onclick="generate_table()">Calculate</button>
+        </div>
+        <div id="common-rates">
+            <h4>Common Rates</h4>
+            <button class="button-3" role="button" value="calculate" onclick="show_common_rates()">Show</button>
+            
+        </div>
+        <div id="common-weights">
+            <h4>Common Weights</h4>
+            <button class="button-3" role="button" value="calculate" onclick="show_common_weights()">Show</button>
+        </div>
+    </div>
+
+</body>
+</html>
